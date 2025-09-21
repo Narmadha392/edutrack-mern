@@ -1,18 +1,26 @@
 # EduTrack (MERN)
 
-A resume-ready MERN learning platform with essential features:
-
 - Authentication (register/login with JWT)
 - Course catalog with search
 - Instructor course creation
 - Enrollments and simple lesson progress tracking
 
-This project is intentionally not over-engineered but follows clean structure and best practices you can talk about in interviews.
-
 ## Tech Stack
 
 - Backend: Node.js, Express, MongoDB (Mongoose), JWT, bcrypt
 - Frontend: React (Vite), React Router, Axios
+
+## Screenshots
+
+### Login
+![Login](./image-3.png)
+
+### Student Dashboard
+![Student Dashboard](./image-2.png)
+
+### Teacher Dashboard
+![Teacher Dashboard](./image-1.png)
+ 
 
 ## Project Structure
 
@@ -86,17 +94,5 @@ Body:
 }
 ```
 
-## Talking Points for Resume/Interviews
 
-- JWT auth middleware (`server/src/middleware/auth.js`).
-- Mongoose models with relations and unique composite index for enrollments.
-- RESTful API structure with role-based access control for course creation.
-- React app with protected routes and Axios interceptor for tokens.
-- Clean, modern dark UI with minimal CSS.
 
-## Production Notes (Future Work)
-
-- Add pagination and sorting to courses.
-- File uploads for course assets.
-- Admin dashboard and analytics.
-- Unit tests (Jest) and E2E (Playwright/Cypress).
